@@ -6,7 +6,14 @@ Create a helpers/controller/views to control e show ramdom backgrounds.
 Install
 =======
 Run:
+gem install background
 
+put in your environment.rb :
+config.gem "background"
+config.reload_plugins = true
+
+
+Run:
 //create the migration of background tables
 script/generate background migration
 rake db:migrate
