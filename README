@@ -3,6 +3,12 @@ Background
 
 Create a helpers/controller/views to control e show ramdom backgrounds.
 
+Dependencies:
+=============
+paperclip
+acl9
+
+
 Install
 =======
 Run:
