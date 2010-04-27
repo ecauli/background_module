@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.date = %q{2010-04-27}
   s.description = %q{Ramdom background}
   s.email = %q{ecauli@gmail.com}
-  s.extra_rdoc_files = ["README", "lib/background.rb"]
-  s.files = ["MIT-LICENSE", "Manifest", "README", "Rakefile", "app/controllers/fundos_controller.rb", "app/helpers/fundo_helper.rb", "app/models/fundo.rb", "app/views/fundos/_css.erb", "app/views/fundos/_fundo.erb", "app/views/fundos/_menu.erb", "app/views/fundos/edit.html.erb", "app/views/fundos/index.html.erb", "app/views/fundos/new.html.erb", "config/routes.rb", "generators/background/background_generator.rb", "generators/background/templates/create_fundos.rb", "init.rb", "install.rb", "lib/background.rb", "uninstall.rb", "background.gemspec"]
+  s.extra_rdoc_files = ["CHANGELOG", "README", "lib/background.rb"]
+  s.files = ["CHANGELOG", "MIT-LICENSE", "Manifest", "README", "Rakefile", "app/controllers/fundos_controller.rb", "app/helpers/fundo_helper.rb", "app/models/fundo.rb", "app/views/fundos/_css.erb", "app/views/fundos/_fundo.erb", "app/views/fundos/_menu.erb", "app/views/fundos/edit.html.erb", "app/views/fundos/index.html.erb", "app/views/fundos/new.html.erb", "background.gemspec", "config/routes.rb", "generators/background/background_generator.rb", "generators/background/templates/create_fundos.rb", "init.rb", "install.rb", "lib/background.rb", "uninstall.rb"]
   s.homepage = %q{http://github.com/ecauli/background}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Background", "--main", "README"]
   s.require_paths = ["lib"]
