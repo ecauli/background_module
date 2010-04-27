@@ -1,0 +1,43 @@
+<% fundo = Fundo.find(:first,:order => "rand()", :conditions=>{:home=>true} ) %>
+
+<% unless fundo.nil? %>
+	<style type="text/css">	
+		body{
+			background:url("<%= fundo.arquivo.url %>") no-repeat fixed center top black;
+			margin:0 auto;
+			min-width:1000px;
+			width:100%;
+		}
+		.cor{
+			background-color:<%= fundo.cor %> !important;
+		}
+		.txt_cor{
+			color:<%= fundo.cor %> !important;
+		}
+		h2{
+			background-color:<%= fundo.cor %> !important;
+			padding: 5px;
+			color: white;
+		}
+	</style>
+<% else %>
+	<style type="text/css">	
+		body{
+			background-color: black;
+			margin:0 auto;
+			min-width:1000px;
+			width:100%;
+		}
+		.cor{
+			background-color: black !important;
+		}
+		.txt_cor{
+			color: black !important;
+		}
+		h2{
+			background-color:black !important;
+			padding: 5px;
+			color: white;
+		}
+	</style>	
+<% end %>	

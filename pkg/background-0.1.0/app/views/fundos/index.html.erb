@@ -1,0 +1,22 @@
+<h1>Lista de fundos</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+	<th>Cor</th>
+	<th>HOME</th>
+  </tr>
+
+<% @fundos.each do |fundo| %>
+  <tr>
+    <td><%=h fundo.titulo %></td>
+	<td style="background-color:<%= fundo.cor%>"><%= fundo.cor %></td>
+	<td><%=h simnao(fundo.home) %></td>
+    <td><%= link_to 'Editar', edit_fundo_path(fundo) %></td>
+    <td><%= link_to 'Deletar', fundo, :confirm => 'tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'Novo Fundo', new_fundo_path %>
