@@ -1,0 +1,22 @@
+<% form_for fundo,  :html => { :multipart => true }  do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+  <p>
+    <%= f.label :arquivo, "Arquivo" %>
+    <%= f.file_field :arquivo %>
+  </p>
+  <%= f.label "Cor" %><br />
+  <div id="color"></div>
+    <%= f.hidden_field :cor %>
+  <p>
+  <p>
+    <%= f.label "HOME" %><br />
+    <%= f.check_box :home %>
+  </p>  
+    <%= f.submit 'Enviar' %>
+  </p>
+<% end %>

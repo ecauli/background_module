@@ -1,0 +1,23 @@
+<% title "Novo Fundo" %>  
+<% content_for (:head) do %>  
+	<%= javascript_include_tag 'jquery' %>
+	<%= stylesheet_link_tag "colorpicker" %>  
+	<%= javascript_include_tag "colorpicker" %>  
+	<script type="text/javascript">  
+		jQuery.noConflict();
+		jQuery(document).ready(function() {
+		    jQuery('#color').ColorPicker({
+				flat: true,
+				color: '<%=@fundo.cor%>',
+				onChange: function (hsb, hex, rgb) {
+					jQuery("#fundo_cor").val("#"+hex);
+				}
+				});				
+		});
+	</script>  
+<% end %> 
+<h1>Editar Fundo</h1>
+
+<%= render :partial => @fundo %>
+
+<%= link_to 'Voltar', fundos_path %>
