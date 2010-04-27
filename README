@@ -6,6 +6,8 @@ Create a helpers/controller/views to control e show ramdom backgrounds.
 Install
 =======
 Run:
+
+gem sources -a http://gemcutter.org
 gem install background
 
 put in your environment.rb :
