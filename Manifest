@@ -1,3 +1,4 @@
+CHANGELOG
 MIT-LICENSE
 Manifest
 README
@@ -11,6 +12,7 @@ app/views/fundos/_menu.erb
 app/views/fundos/edit.html.erb
 app/views/fundos/index.html.erb
 app/views/fundos/new.html.erb
+background.gemspec
 config/routes.rb
 generators/background/background_generator.rb
 generators/background/templates/create_fundos.rb
